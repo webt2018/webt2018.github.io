@@ -7,10 +7,15 @@ font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 font-size: 50px;
 color: black;
 position: absolute;
+-webkit-text-size-adjust: auto;
 }
 
-firstLetter{
+firstLetter
+{
     color: red;
+    white-space: nowrap;
+    font-size: 3vw;
+    -webkit-text-size-adjust: auto;
 }
 
 h2{
@@ -18,9 +23,15 @@ h2{
     font-size: 22px;
     color: black;
     margin: 7px;
+    -webkit-text-size-adjust: auto;
 }
 
-
+text{
+    position: relative;
+    left: 5vw;
+    top:5vw;
+    -webkit-text-size-adjust: auto;
+}
 body{
     background-color: rgb(9, 72, 122,.5);
 }
@@ -37,11 +48,13 @@ heading{
     left: 0%;
     max-width: 400px;
     white-space:pre;
+    -webkit-text-size-adjust: auto;
    
 }
 
 form{
     display: inline;
+    -webkit-text-size-adjust: auto;
 }
 
 
@@ -52,6 +65,7 @@ To fit a picture use the class fit
     max-width: 120%;
     max-height: 100vh;
     height: auto;
+    -webkit-text-size-adjust: auto;
   }
 
 /*
