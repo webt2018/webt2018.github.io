@@ -1,6 +1,6 @@
 
 /*---------------------------*/
-/* Template default CSS
+/* Normal Stuff
 /*---------------------------*/
 
 html,
@@ -11,12 +11,7 @@ body {
 	font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	font-weight: 500;
 	color: #131313;
@@ -162,15 +157,15 @@ ol {
 	background: #ff205f;
 }
 
-.space.strategy {
+.space.new1 {
 	background: #4eae60;
 }
 
-.space.racing {
+.space.new2 {
 	background: #694eae;
 }
 
-.space.adventure {
+.space.new3 {
 	background: #40abf5;
 }
 
@@ -453,11 +448,11 @@ ol {
 	background: #ff205f;
 }
 
-.news-ticker-contant .nt-item span.strategy {
+.news-ticker-contant .nt-item span.new1 {
 	background: #4eae60;
 }
 
-.news-ticker-contant .nt-item span.racing {
+.news-ticker-contant .nt-item span.new2 {
 	background: #694eae;
 }
 
