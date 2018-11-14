@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	font-weight: 500;
 	color: #131313;
+	text-align: center;
 }
 
 h1 {
@@ -111,11 +112,6 @@ body {
 			transition: color 0.1s linear; 
 		}
 
-
-
-
-
-
 html, body {
 	padding: 0;
 	margin: 0;
@@ -132,9 +128,7 @@ html, body {
 	padding-bottom: 100px;
   }
   
-  h2, h3 {
-	margin: 0 0 .75em 0;
-  }
+ 
   
  
   .container {
@@ -201,10 +195,10 @@ html, body {
 	}
   }
   
-  .call-out:nth-child(1) {background-color: #c0dbe2;}
-  .call-out:nth-child(2) {background-color: #cdf1c3;}
-  .call-out:nth-child(3) {background-color: #ccb9da;}
   
+  .call-out:nth-child(1) {background-color: #FFFFFF;}
+	.call-out:nth-child(2) {background-color: #a72424;}
+  .call-out:nth-child(3) {background-color: #ffffff;}
 
   .fixed-size-container {
 	max-width: 1400px;
@@ -281,5 +275,13 @@ html, body {
     background-repeat: no-repeat;
     background-position: center; 
 		position: relative;;
+
+}
+
+.bgGrass{
+	background-image: url('../img/grass.jpg');
+	background-repeat: no-repeat;
+	background-position: center; 
+	position: relative;;
 
 }
