@@ -196,9 +196,9 @@ html, body {
   }
   
   
-  .call-out:nth-child(1) {background-color: #FFFFFF;}
-	.call-out:nth-child(2) {background-color: #a72424;}
-  .call-out:nth-child(3) {background-color: #ffffff;}
+  .call-out:nth-child(1) {background-color: rgb(255, 196, 107);}
+	.call-out:nth-child(2) {background-color: #70fc55;}
+  .call-out:nth-child(3) {background-color: #b5c0ff;}
 
   .fixed-size-container {
 	max-width: 1400px;
