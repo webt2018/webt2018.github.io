@@ -1,0 +1,287 @@
+
+body{
+	background-image: url(../img/concrete.jpg);
+  position: relative;
+}
+
+
+
+/*---------------------------*/
+/* Normal Stuff
+/*---------------------------*/
+
+html,
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-weight: 500;
+	color: #131313;
+	text-align: center;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 14px;
+	color: #878787;
+	line-height: 2;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+body {
+	background-color: #EBE8E4;
+	color: #222;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+  }
+  
+  nav {
+	background-color: #fff;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888;
+	display: block;
+	margin: 8px 22px 8px 22px;
+	overflow: hidden;
+	width: 90%; 
+  }
+  
+	nav ul {
+	  margin: 0;
+	  padding: 0;
+	}
+  
+	  nav ul li {
+		display: inline-block;
+		list-style-type: none;
+		
+		-webkit-transition: all 0.2s;
+		  -moz-transition: all 0.2s;
+		  -ms-transition: all 0.2s;
+		  -o-transition: all 0.2s;
+		  transition: all 0.2s; 
+	  }
+		
+		nav > ul > li > a > .caret {
+		  border-top: 4px solid #aaa;
+		  border-right: 4px solid transparent;
+		  border-left: 4px solid transparent;
+		  content: "";
+		  display: inline-block;
+		  height: 0;
+		  width: 0;
+		  vertical-align: middle;
+	
+		  -webkit-transition: color 0.1s linear;
+			-moz-transition: color 0.1s linear;
+		  -o-transition: color 0.1s linear;
+			transition: color 0.1s linear; 
+		}
+
+html, body {
+	padding: 0;
+	margin: 0;
+  }
+  
+  input {
+	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+  }
+  
+  body {
+	background-color: #BBB;
+	font-family: Helvetica, sans-serif;
+	padding-bottom: 100px;
+  }
+  
+ 
+  
+ 
+  .container {
+	max-width: 750px;
+	margin: 20px auto 0 auto;
+	padding: 30px;
+	background-color: #FFF;
+  }
+  
+  .form-row {
+	padding: 10px 0;
+	display: flex;
+  }
+  
+  .form-row label {
+	padding-right: 10px;
+  }
+  
+  .form-row input {
+	flex: 1;
+  }
+
+  .column-layout {
+	max-width: 1300px;
+	background-color: #FFF;
+	margin: 40px auto 0 auto;
+	line-height: 1.65;
+	padding: 20px 50px;
+	display: flex;
+  }
+  
+  .main-column {
+	flex: 3;
+	order: 2;
+  }
+  
+  .sidebar-one {
+	flex: 1;
+	order: 1;
+  }
+  
+  .sidebar-two {
+	flex: 1;
+	order: 3;
+  }
+  
+
+  .call-outs-container {
+	max-width: 1400px;
+	margin: 40px auto 0 auto;
+  }
+  
+  .call-out {
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	flex-basis: 30%;
+  }
+  
+  @media (min-width: 900px) {
+	.call-outs-container {
+	  display: flex;
+	  justify-content: space-between;
+	}
+  }
+  
+  
+  .call-out:nth-child(1) {background-color: rgb(255, 196, 107);}
+	.call-out:nth-child(2) {background-color: #70fc55;}
+  .call-out:nth-child(3) {background-color: #b5c0ff;}
+
+  .fixed-size-container {
+	max-width: 1400px;
+	margin: 40px auto 0 auto;
+	background-color: #FFF;
+	padding: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+  }
+  
+  .fixed-size {
+	width: 150px;
+	height: 100px;
+	background-color: #990b47;
+	color: #FFF;
+	line-height: 100px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 60px;
+	margin-bottom: 20px;
+  }
+  
+
+  .banner {
+	height: 400px;
+	max-width: 700px;
+	margin: 40px auto 40px auto;
+	background-color: #2a2a2a;
+	display: flex;
+  }
+  
+  .center-me {
+	color: #FFF;
+	font-size: 50px;
+	margin: auto;
+  }
+  
+ 
+  .equal-height-container {
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+  }
+  
+  .first {
+	background-color: #FFF;
+	padding: 20px;
+	flex: 1;
+  }
+  
+  .second {
+	background-color: yellow;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .second-a {
+	background-color: #c0dbe2;
+	flex: 1;
+  }
+  
+  .second-b {
+	background-color: #cdf1c3;
+	flex: 1;
+  }
+
+
+/*Background of a Div*/
+  .bgIot{
+    background-image: url('../img/iot.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+		position: relative;;
+
+}
+
+.bgGrass{
+	background-image: url('../img/grass.jpg');
+	background-repeat: no-repeat;
+	background-position: center; 
+	position: relative;;
+
+}
