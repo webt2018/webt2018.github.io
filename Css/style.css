@@ -1,4 +1,11 @@
 
+body{
+	background-image: url(../img/concrete.jpg);
+  position: relative;
+}
+
+
+
 /*---------------------------*/
 /* Normal Stuff
 /*---------------------------*/
@@ -277,5 +284,6 @@ html, body {
     background-image: url('../img/iot.jpg');
     background-repeat: no-repeat;
     background-position: center; 
-    position: relative;;
+		position: relative;;
+
 }
