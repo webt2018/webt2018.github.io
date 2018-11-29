@@ -173,7 +173,10 @@ html, body {
   .sidebar-two {
 	flex: 1;
 	order: 3;
-	  background-color: green;
+	  background-image: url('../img/iot.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+		position: relative;
   }
   
 
