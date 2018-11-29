@@ -173,6 +173,7 @@ html, body {
   .sidebar-two {
 	flex: 1;
 	order: 3;
+	  color: green;
   }
   
 
