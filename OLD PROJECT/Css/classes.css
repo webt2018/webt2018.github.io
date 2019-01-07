@@ -1,0 +1,116 @@
+/*
+Button begin
+*/
+.button{
+    position: absolute;
+    left: 50%;
+    top:40%;
+    color: cornflowerblue;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+.button:hover {
+    background-color: white;
+}
+
+.button{
+        height:20px; 
+        width:100px; 
+        margin: -20px -50px; 
+        position:relative;
+        top:50%; 
+        left:50%;
+    
+}
+
+
+
+
+/*
+Button bend
+*/
+form{
+    display: inline;
+}
+
+
+div.auto{
+    height: auto;
+    border: 1px solid black;
+    background-color:white;
+}
+
+
+/*
+header begin
+*/
+ul{
+    margin-top: 0px;
+    float:right;
+    list-style-type: none;
+}
+
+ul li{
+   display: inline-block;
+}
+
+ul li a{
+    
+    color: cornflowerblue;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    text-decoration: aqua;
+}
+ul li a:hover{
+    background-color: white;
+}
+ul li.active a{
+    background-color: white; 
+}
+
+/*
+header end
+*/
+
+
+.picture img
+{
+    margin-top: -17px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 1080;
+}
+
+.logo img{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    float: left;
+    width: 50px;
+    height: auto;
+
+}
+
+.main{
+    max-width: 1920px;
+}
+
+.title{
+    position: absolute;
+    top:30%;
+    left: 50%;
+}
+
+.title h1{
+
+    color: white;
+    background-color: transparent;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: translate(-50%,-50%);
+}
