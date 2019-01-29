@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <<div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand show" href="#" style="color:#1f2021;font-size:29px;">IoT</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="index.html">Home</a></li>
+                        <li role="presentation"><a href="products.html">Projects</a></li>
+                        <li role="presentation"><a href="about.html">About</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <div>
+        <div class="header-dark">
+            <nav class="navbar navbar-default navigation-clean-search">
+                <div class="container" style="remove">
+                    <div class="navbar-header"><a class="navbar-brand hidden" href="#" style="/*z-index:-1;*/">Freibuch</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1"></div>
+        </div>
+        </nav>
+        <div class="container hero">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="text-center">Internet of Things<br></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- jquery for maximum compatibility -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+
+
+    var quiztitle = "IoT Quiz";
+
+    /**
+    * Set the information about your questions here. The correct answer string needs to match
+    * the correct choice exactly, as it does string matching. (case sensitive)
+    *
+    */
+    var quiz = [
+
+    {
+            "question"      :   "Q1: Let’s start with an easy one. What does IoT stand for?",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/268f1895-87f9-40de-957e-8da76cf32111.jpg",
+            "choices"       :   [
+                                    "The Internet of Things",
+                                    "A fancy way to say Internet",
+                                    "A Machine Learning Software",
+                                ],
+            "correct"       :   "The Internet of Things",
+            "explanation"   :   "",
+        },
+
+        {
+            "question"      :   "Q2: Well done. Another way of referring to IoT devices is…",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/df63e74e-0b9e-428b-81dd-b147b37b215f.jpg",
+            "choices"       :   [
+                                    "Connected",
+                                    "Smart",
+                                    "Neither",
+                                    "Both"
+                                ],
+            "correct"       :   "Both",
+            "explanation"   :   "Of course its ,both Iot is Connected and Smart",
+        },
+        {
+            "question"      :   "Q3: What are the top two most common Languages for Arduions ?",
+            "image"         :   "",
+            "choices"       :   [
+                                    "Javasript & C++",
+                                    "Javasript & C",
+                                    "Javascript & Java",
+                                    "C & C++"
+                                ],
+            "correct"       :   "C & C++",
+            "explanation"   :   "The Arduino integrated development environment (IDE) is a cross-platform application (for Windows, macOS, Linux) that is written in the programming language Java. It is used to write and upload programs to Arduino board. The Arduino IDE supports the languages C and C++ using special rules of code structuring.",
+        },
+
+        {
+            "question"      :   "Q4: Which of these devices is part of the IoT?",
+            "image"         :   "https://www.evolvefish.com/thumbnail.asp?file=assets/images/vinyl%20decals/EF-VDC-00035(black).jpg&maxx=300&maxy=0",
+            "choices"       :   [
+                                    "Casio Calculator Watch",
+                                    "Apple Watch",
+
+                                ],
+            "correct"       :   "Apple Watch",
+            "explanation"   :   "The Casio Calculator Watch did not even had a Internet connection.",
+        },
+
+        {
+            "question"      :   "Q5: What is special about the Internet of Things?",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/4eafa3ff-d22b-4af7-b229-3446e969b37c.jpg",
+            "choices"       :   [
+                                    "It has sole possession of the IoT acronym",
+                                    "The data generated from such devices will revolutionse the world around us",
+
+                                ],
+            "correct"       :   "The data generated from such devices will revolutionse the world around us",
+            "explanation"   :   "Artifical Intelligents or short AI will help us revolutionse our usage of Technology!",
+        },
+        {
+            "question"      :   "Q6: What is the IoT built on?",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/3dc0f51b-d15f-4c91-89c5-e62cf6cb1fb6.jpg",
+            "choices"       :   [
+                                    "Both",
+                                    "Cloud computing",
+                                    "Networks of data-gathering sensors",
+
+                                ],
+            "correct"       :   "Both",
+            "explanation"   :   "Both Awnsers are correct Cloud computing and data-gathering senosor Networks are quite useful as an IoT Developer",
+        },
+
+        {
+            "question"      :   "Q7: How many IoT devices are there estimated to be in the world?",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/3b09e5ac-8930-41d3-8bf0-aa36efed116b.jpg",
+            "choices"       :   [
+                                    "5.000.000",
+                                    "1.000.000.000 ",
+                                    "15.000.000.000",
+
+                                ],
+            "correct"       :   "15.000.000.000",
+            "explanation"   :   "15 Billion There are almost twice as many IoT devices than Humans !",
+        },
+
+        {
+            "question"      :   "Q8: And how many are there predicted to be by 2020?",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/3b09e5ac-8930-41d3-8bf0-aa36efed116b.jpg",
+            "choices"       :   [
+                                    "30 Billion+",
+                                    "20 -30 Billion",
+                                    "15-20 Billion",
+
+                                ],
+            "correct"       :   "20 -30 Billion",
+            "explanation"   :   "The future shines bright for the IoT Heaven . Statistics say that there will be 20-30 Billion Iot Devices in 2020",
+        },
+
+        {
+            "question"      :   "Q9: How much is the IoT market expected to be worth by 2025?",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/0a70dd46-6fe1-47df-870b-7c20b27bb60d.jpg",
+            "choices"       :   [
+                                    "$2tn",
+                                    "$500bn",
+                                    "$3trillion",
+
+                                ],
+            "correct"       :   "$3trillion",
+            "explanation"   :   "Iot specialists predict that the IoT market will be worth 3 Trillion Dollars in 2025 ",
+        },
+
+        {
+            "question"      :   "Q10: So what is the Internet of Everything?",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/a97faf35-32a3-425f-80ce-b6bdc643d87b.jpg",
+            "choices"       :   [
+                                    "The intelligent connection of people, process data and things",
+                                    "The day that computers take control of the World",
+
+                                ],
+            "correct"       :   "The intelligent connection of people, process data and things",
+            "explanation"   :   "Iot specialists predict that the IoT market will be worth 3 Trillion Dollars in 2025 ",
+        },
+
+        {
+            "question"      :   "Q10: What is big Data",
+            "image"         :   "https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit/cdn/bb6b4de8-fc12-4aa9-8563-3c64daf4efad/3dc0f51b-d15f-4c91-89c5-e62cf6cb1fb6.jpg",
+            "choices"       :   [
+                                    "The most important data that comes in to a business",
+                                    "Data sets so large or complex that traditional processing applications are useless against",
+
+                                ],
+            "correct"       :   "Data sets so large or complex that traditional processing applications are useless against",
+            "explanation"   :   "Iot specialists predict that the IoT market will be worth 3 Trillion Dollars in 2025 ",
+        },
+
+    ];
+
+
+    /******* No need to edit below this line *********/
+    var currentquestion = 0, score = 0, submt=true, picked;
+
+    jQuery(document).ready(function($){
+
+        /**
+         * HTML Encoding function for alt tags and attributes to prevent messy
+         * data appearing inside tag attributes.
+         */
+        function htmlEncode(value){
+          return $(document.createElement('div')).text(value).html();
+        }
+
+        /**
+         * This will add the individual choices for each question to the ul#choice-block
+         *
+         * @param {choices} array The choices from each question
+         */
+        function addChoices(choices){
+            if(typeof choices !== "undefined" && $.type(choices) == "array"){
+                $('#choice-block').empty();
+                for(var i=0;i<choices.length; i++){
+                    $(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');                    
+                }
+            }
+        }
+        
+        /**
+         * Resets all of the fields to prepare for next question
+         */
+        function nextQuestion(){
+            submt = true;
+            $('#explanation').empty();
+            $('#question').text(quiz[currentquestion]['question']);
+            $('#pager').text('Question ' + Number(currentquestion + 1) + ' of ' + quiz.length);
+            if(quiz[currentquestion].hasOwnProperty('image') && quiz[currentquestion]['image'] != ""){
+                if($('#question-image').length == 0){
+                    $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question'])).insertAfter('#question');
+                } else {
+                    $('#question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question']));
+                }
+            } else {
+                $('#question-image').remove();
+            }
+            addChoices(quiz[currentquestion]['choices']);
+            setupButtons();
+        }
+
+        /**
+         * After a selection is submitted, checks if its the right answer
+         *
+         * @param {choice} number The li zero-based index of the choice picked
+         */
+        function processQuestion(choice){
+            if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
+                $('.choice').eq(choice).css({'background-color':'#50D943'});
+                $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+                score++;
+            } else {
+                $('.choice').eq(choice).css({'background-color':'#D92623'});
+                $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+            }
+            currentquestion++;
+            $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function(){
+                if(currentquestion == quiz.length){
+                    endQuiz();
+                } else {
+                    $(this).text('Check Answer').css({'color':'#222'}).off('click');
+                    nextQuestion();
+                }
+            })
+        }
+
+        /**
+         * Sets up the event listeners for each button.
+         */
+        function setupButtons(){
+            $('.choice').on('mouseover', function(){
+                $(this).css({'background-color':'#e1e1e1'});
+            });
+            $('.choice').on('mouseout', function(){
+                $(this).css({'background-color':'#fff'});
+            })
+            $('.choice').on('click', function(){
+                picked = $(this).attr('data-index');
+                $('.choice').removeAttr('style').off('mouseout mouseover');
+                $(this).css({'border-color':'#222','font-weight':700,'background-color':'#c1c1c1'});
+                if(submt){
+                    submt=false;
+                    $('#submitbutton').css({'color':'#000'}).on('click', function(){
+                        $('.choice').off('click');
+                        $(this).off('click');
+                        processQuestion(picked);
+                    });
+                }
+            })
+        }
+        
+        /**
+         * Quiz ends, display a message.
+         */
+        function endQuiz(){
+            $('#explanation').empty();
+            $('#question').empty();
+            $('#choice-block').empty();
+            $('#submitbutton').remove();
+            $('#question').text("You got " + score + " out of " + quiz.length + " correct.");
+            $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quiz.length * 100) + '%').insertAfter('#question');
+        }
+
+        /**
+         * Runs the first time and creates all of the elements for the quiz
+         */
+        function init(){
+            //add title
+            if(typeof quiztitle !== "undefined" && $.type(quiztitle) === "string"){
+                $(document.createElement('h1')).text(quiztitle).appendTo('#frame');
+            } else {
+                $(document.createElement('h1')).text("Quiz").appendTo('#frame');
+            }
+
+            //add pager and questions
+            if(typeof quiz !== "undefined" && $.type(quiz) === "array"){
+                //add pager
+                $(document.createElement('p')).addClass('pager').attr('id','pager').text('Question 1 of ' + quiz.length).appendTo('#frame');
+                //add first question
+                $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
+                //add image if present
+                if(quiz[0].hasOwnProperty('image') && quiz[0]['image'] != ""){
+                    $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[0]['image']).attr('alt', htmlEncode(quiz[0]['question'])).appendTo('#frame');
+                }
+                $(document.createElement('p')).addClass('explanation').attr('id','explanation').html('&nbsp;').appendTo('#frame');
+            
+                //questions holder
+                $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
+            
+                //add choices
+                addChoices(quiz[0]['choices']);
+            
+                //add submit button
+                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
+            
+                setupButtons();
+            }
+        }
+        
+        init();
+    });
+    </script>
+    <style type="text/css" media="all">
+        /*css reset */
+        html,body,div,span,h1,h2,h3,h4,h5,h6,p,code,small,strike,strong,sub,sup,b,u,i{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;} 
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;} 
+        body{line-height:1; font:normal 0.9em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;} 
+        ol,ul{list-style:none;}
+        strong{font-weight:700;}
+        #frame{max-width:620px;width:auto;border:1px solid #ccc;background:#fff;padding:10px;margin:3px;}
+        h1{font:normal bold 2em/1.8em "Helvetica Neue", Helvetica, Arial, sans-serif;text-align:left;border-bottom:1px solid #999;padding:0;width:auto}
+        h2{font:italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;padding:0;text-align:center;margin:20px 0;}
+        p.pager{margin:5px 0 5px; font:bold 1em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;color:#999;}
+        img.question-image{display:block;max-width:250px;margin:10px auto;border:1px solid #ccc;width:100%;height:auto;}
+        #choice-block{display:block;list-style:none;margin:0;padding:0;}
+        #submitbutton{background:#5a6b8c;}
+        #submitbutton:hover{background:#7b8da6;}
+        #explanation{margin:0 auto;padding:20px;width:75%;}
+        .choice-box{display:block;text-align:center;margin:8px auto;padding:10px 0;border:1px solid #666;cursor:pointer;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+    </style>
+</head>
+<body>
+    <div id="frame" role="content"></div>
+</body>
+</html>
